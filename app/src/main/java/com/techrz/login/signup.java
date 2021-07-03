@@ -33,7 +33,7 @@ public class signup extends AppCompatActivity {
         firstname=findViewById(R.id.firstname);
         lastname=findViewById(R.id.lastname);
         email=findViewById(R.id.email);
-        password=findViewById(R.id.password);
+        password=findViewById(R.id.passwordreg);
         repassword=findViewById(R.id.passwordre);
         phonenumber=findViewById(R.id.phonenumber);
 
@@ -56,6 +56,17 @@ public class signup extends AppCompatActivity {
                 if(lastname.getText().toString().equals("")) errorlastname.setText("Last name can not be Empty");
                 if(!lastname.getText().toString().equals("")) errorlastname.setText(" "); //sent to database
 
+                if(email.getText().toString().equals("")) errormail.setText("Email can not be Empty");
+                if(!email.getText().toString().equals("")) errormail.setText(" "); //sent to database
+
+                if(password.getText().toString().equals("")) errorpassword.setText("Password can not be Empty");
+                if(!password.getText().toString().equals("")) errorpassword.setText(" "); //sent to database
+
+                if(!password.getText().toString().equals(repassword.getText().toString())) errorrepassword.setText("Password didn't match");
+                if(password.getText().toString().equals(repassword.getText().toString())) errorrepassword.setText(" ");
+
+                if(phonenumber.getText().toString().equals("")) errorphone.setText("Last name can not be Empty");
+                if(!phonenumber.getText().toString().equals("")) errorphone.setText(" "); //sent to database
                 }
 
         });
