@@ -12,7 +12,7 @@ public class signup extends AppCompatActivity {
 
     EditText firstname;
     EditText lastname;
-    EditText username;
+    EditText email;
     EditText password;
     EditText repassword;
     EditText phonenumber;
@@ -26,7 +26,13 @@ public class signup extends AppCompatActivity {
 
         firstname=findViewById(R.id.firstname);
         lastname=findViewById(R.id.lastname);
+        email=findViewById(R.id.email);
+        password=findViewById(R.id.password);
+        repassword=findViewById(R.id.passwordre);
+        phonenumber=findViewById(R.id.phonenumber);
+
         submit=findViewById(R.id.submitreg);
+
         errorfirstname= findViewById(R.id.error1);
         errorlastname= findViewById(R.id.error2);
         submit.setOnClickListener(new View.OnClickListener() {
