@@ -19,6 +19,12 @@ public class signup extends AppCompatActivity {
     private Button submit;
     TextView errorfirstname;
     TextView errorlastname;
+    TextView errormail;
+    TextView errorpassword;
+    TextView errorrepassword;
+    TextView errorphone;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +41,12 @@ public class signup extends AppCompatActivity {
 
         errorfirstname= findViewById(R.id.error1);
         errorlastname= findViewById(R.id.error2);
+        errormail= findViewById(R.id.error3);
+        errorpassword= findViewById(R.id.error4);
+        errorrepassword= findViewById(R.id.error5);
+        errorphone= findViewById(R.id.error6);
+
+
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
